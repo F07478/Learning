@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .header-banner-top {
+    margin: 0px;
+    font-family: 'segoe ui';
+    background-image: url("header.jpg");
+    height: 700px;
+    background-size: cover;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(167, 156, 156);
+    color: white;
+  }
+
+  .nav-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+  }
+
+  .nav-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  .nav-links li {
+    list-style: none;
+  }
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display:block;
+  }
+  .nav-links li:hover {
+    background-color: rgb(86, 77, 65);
+  }
+
+  .toggle-button {
+    position: absolute;
+    top: .75rem;
+    right:1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+
+
+  .toggle-button .bar {
+    height:3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .primary-wrap {
+    text-align: center;
+  }
+  .site-title {
+    font-family: Georgia, serif;  
+    font-size: 5em;
+    margin: 2em 0;
+    margin-bottom: 0;
+    color: white;
+    text-shadow: 0.03em 0.03em 0 rgb(166, 143, 113), 0 0 0.5em rgb(53, 49, 43);
+  }
+  
+  .tagline {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 0.03em 0.03em 0 rgb(166, 143, 113), 0 0 0.5em rgb(53, 49, 43);
+    padding: 0px 90px 0 90px;
+
+  }
+
+ @media (max-width: 700px) {
+  .toggle-button{
+    display: flex;
+  }
+  .nav-links{
+    display: none;
+    width: 100%;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    text-align: center;
+  }
+
+  .nav-links li a {
+    padding: .5rem 1rem;
+  }
+
+  .nav-links.active {
+    display:flex;
+  }
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* }
+  
+  .nav {
+    height: 50px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #0c0b0b;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #0c0b0b;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: #8e7d7d;
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  .primary-wrap > .site-title {
+    text-align: center;
+    padding: 30vh 25vh 0vh 25vh;
+    font-weight: bold;  
+  }
+  .primary-wrap > .tagline{
+    text-align: center;
+    padding: 0vh 25vh 0vh 25vh; 
+    }
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(129, 116, 116, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links{
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: rgba(129, 116, 116, 0.3);
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  } */
